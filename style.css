@@ -1,0 +1,269 @@
+
+/* MOBILE FIRST EXAMPLE
+.column {
+    float: left;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .column {
+        background-color: aqua;
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .column {
+        background-color: blueviolet;
+    }
+}
+*/
+
+/* DESKTOP FIRST EXAMPLE
+.column {
+    float: left;
+    height: 50px;
+    width: 30%;
+    background-color: #e84610; 
+    margin: 10px;
+}
+
+@media (max-width: 991px) {
+    .column {
+        background-color: aqua;
+    }
+}
+
+@media (max-width: 767px) {
+    .column {
+        background-color: blue;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+*/
+
+/* RESPONSIVE MINI-PROJECT
+
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    color: blueviolet;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aquamarine;
+    padding: 15px 25px;
+}
+
+.main {
+    height: 100%;
+}
+
+.section {
+    background-color: rgba(225, 225, 225, .8);
+    height: 100%;
+}
+
+.vcenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section-paragraph {
+    font-size: 1em;
+    margin: 25px;
+}
+
+.footer{
+    background-color: #4a4a4f;
+    padding: 15px;
+}
+
+
+
+@media (min-width: 768px) {
+    .column {
+        float: left;
+    }
+    .column-60 {
+        width: 60%;
+    }
+    .column-40 {
+        width: 40%;
+    }
+}*/
+
+/* TRANSITION EXCERCISE 
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    transition-property: width, background-color;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out; 
+}
+
+.box:hover {
+    width:150px;
+    background-color: aquamarine;
+}*/
+
+/* KEYFRAME EXCERCISE 
+
+.box {
+    background-color: black;
+    width: 150px;
+    height: 0;
+    margin: 25px;
+    animation-name: growing;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+
+@keyframes growing {
+    from {
+        height:0;
+    }
+    to {
+        height:150px;
+    }
+
+}*/
+
+/* TRANSFORMATIONS EXCERCISE 
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transform: scale(1.5)
+    
+}
+*/
+
+/* TRANSFORMATION CHALLENGE 1 
+
+img {
+    width: 10em;
+    height: 10em;
+    transition-property: height, width;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+img:hover {
+    width: 20em;
+    height: 20em;
+}
+*/
+
+/* TRANSFORMATION CHALLENGE 2 
+
+img {
+    width: 10em;
+    height: 10em;
+    animation: spin 4s infinite linear;
+   
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}*/
+
+/* TRANSFORMATION CHALLENGE 3  
+
+.element {
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    transition: transform 1s ease-in-out;
+}
+
+.element:hover {
+    transform: translateX(100%)
+}*/
+
+/* NAVIGATION DROP DOWN */ 
+
+.navDefault {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #4a4a4f;
+}
+
+button {
+    border: none;
+    background-color: #0997d3;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.dropdownMenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    z-index: -1;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-100%);
+    transition: transform .5s ease-in-out;
+}
+
+.dropdownLink {
+    text-decoration: none;
+    display:block;
+    background-color: #f9f9f9;
+    color: #4a4a4f;
+    padding: 10px 5px;
+    transition: background-color .5s ease-in-out, color .5s ease-in-out;
+    
+}
+
+.dropdownLink:hover {
+    color: #fff;
+    background-color: #a0a0a3;
+}
+
+.dropdown {
+    width: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown:hover button {
+    background-color: #018ec5;
+}
+
+.dropdown:hover .dropdownMenu {
+    transform: translateY(0);
+}
